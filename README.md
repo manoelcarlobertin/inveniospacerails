@@ -6,19 +6,23 @@ Assista:  https://www.youtube.com/watch?v=xL5nE7HP2B0
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version ruby 3.3.1, Rails 7.2.1
 
-* System dependencies
+* class AddPlanetToAlien < ActiveRecord::Migration[7.2]
+  def change
+    add_reference :aliens, :planet, null: TRUE, foreign_key: true   <------ null: false trocar para true. E logo depois de todos selecionados retornei FALSE.
+  end
+end
 
-* Configuration
+* Configuration Postgresql app/config/database.yml
 
-* Database creation
+* host: localhost username: postgres password:
 
 * Database initialization
 
-* How to run the test suite
+* Relation power Alien with yours powers
 
-* Services (job queues, cache servers, search engines, etc.)
+* Relation local Alien with the Planet
 
 * Deployment instructions
 
