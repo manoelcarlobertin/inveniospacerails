@@ -22,6 +22,8 @@ end
 
 * Relation power Alien with yours powers
 
+  # AlienPower é a TABELA ASSOCIATIVA (muitos para muitos) no banco de dados onde um Alien terá muitos poderes e um Power poderá pertencer a muitos Aliens. 
+
 * Relation local Alien with the Planet
 
 * Deployment instructions
